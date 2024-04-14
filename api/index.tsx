@@ -13,7 +13,7 @@ export const app = new Frog({
   // hubApiUrl: 'https://api.hub.wevm.dev',
 });
 
-frame();
+app.route('/', frame);
 
 export const GET = handle(app);
 export const POST = handle(app);

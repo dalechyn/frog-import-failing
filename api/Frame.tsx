@@ -1,8 +1,6 @@
-import { Button, TextInput } from "frog";
-import { app } from "./index.js";
+import { Button, TextInput, Frog } from "frog";
 
-export const frame = () => {
-  app.frame("/", (c) => {
+export const frame = new Frog().frame("/", (c) => {
     const { buttonValue, inputText, status } = c;
     const fruit = inputText || buttonValue;
     return c.res({
@@ -51,4 +49,3 @@ export const frame = () => {
       ],
     });
   });
-};
