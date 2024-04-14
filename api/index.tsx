@@ -1,6 +1,6 @@
 import { Frog } from "frog";
 import { handle } from "frog/vercel";
-import { frame } from "./frame.js";
+import { frame } from "./frame";
 
 // Uncomment to use Edge Runtime.
 // export const config = {
