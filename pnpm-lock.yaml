@@ -4,10 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  frog@0.8.2:
+    hash: 4fe6gfg7y4m4abqvtmpwjjriha
+    path: patches/frog@0.8.2.patch
+
 dependencies:
   frog:
     specifier: latest
-    version: 0.8.2(@types/node@14.18.33)(hono@4.2.4)(typescript@5.4.5)
+    version: 0.8.2(patch_hash=4fe6gfg7y4m4abqvtmpwjjriha)(@types/node@14.18.33)(hono@4.2.4)(typescript@5.4.5)
   hono:
     specifier: ^4
     version: 4.2.4
@@ -1678,7 +1683,7 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
 
-  /frog@0.8.2(@types/node@14.18.33)(hono@4.2.4)(typescript@5.4.5):
+  /frog@0.8.2(patch_hash=4fe6gfg7y4m4abqvtmpwjjriha)(@types/node@14.18.33)(hono@4.2.4)(typescript@5.4.5):
     resolution: {integrity: sha512-AxiFttzMwO+bVBZuwtrwcFxZxg/WsTaSVwFCYcg9F6W0YewtAdHAGhPcXgUq6CMT/8depl6FsXm8K0zgPKpYpA==}
     hasBin: true
     peerDependencies:
@@ -1720,6 +1725,7 @@ packages:
       - utf-8-validate
       - zod
     dev: false
+    patched: true
 
   /fs-extra@11.1.0:
     resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}

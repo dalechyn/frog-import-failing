@@ -15,5 +15,10 @@
     "tsx": "^4.7.1",
     "typescript": "^5.3.3",
     "vercel": "^32.4.1"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "frog@0.8.2": "patches/frog@0.8.2.patch"
+    }
   }
 }
